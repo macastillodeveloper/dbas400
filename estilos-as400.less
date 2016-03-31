@@ -12,7 +12,8 @@
 
 
 @distancia_entre_lineas : 25px;
-@fila_01 : 5px;
+@fila_00 : 0px;
+@fila_01 : 20px;
 @fila_02 : @fila_01 + @distancia_entre_lineas;
 @fila_03 : @fila_02 + @distancia_entre_lineas;
 @fila_04 : @fila_03 + @distancia_entre_lineas;
@@ -140,7 +141,9 @@ color : @color-campoAS400;
 border : 1px solid @color-borde-ventana-as400;
 position : absolute;
 top : 100px;
-font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family : "Courier New", sans-serif;
+font-size: 1.85rem;
+
 /*line-height: 50px;*/
 }
 
@@ -257,6 +260,15 @@ font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .etiquetaAS400{ color : @color-etiquetaAS400; }
 .etiquetaAS400-azul{ color : @color-etiquetaAS400-azul; }
+
+.regla{
+    position : absolute;
+    top: @fila_00;
+    left: 0px;
+    font-family : "Courier New", sans-serif;
+    font-size: 1.85rem;
+    color: yellow;
+}
 
 
 

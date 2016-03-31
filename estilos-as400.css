@@ -17,104 +17,105 @@ body {
   border: 1px solid green;
   position: absolute;
   top: 100px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Courier New", sans-serif;
+  font-size: 1.85rem;
   /*line-height: 50px;*/
 }
 .linea01 {
   position: absolute;
-  top: 5px;
+  top: 20px;
 }
 .linea02 {
   position: absolute;
-  top: 30px;
+  top: 45px;
 }
 .linea03 {
   position: absolute;
-  top: 55px;
+  top: 70px;
 }
 .linea04 {
   position: absolute;
-  top: 80px;
+  top: 95px;
 }
 .linea05 {
   position: absolute;
-  top: 105px;
+  top: 120px;
 }
 .linea06 {
   position: absolute;
-  top: 130px;
+  top: 145px;
 }
 .linea07 {
   position: absolute;
-  top: 155px;
+  top: 170px;
 }
 .linea08 {
   position: absolute;
-  top: 180px;
+  top: 195px;
 }
 .linea09 {
   position: absolute;
-  top: 205px;
+  top: 220px;
 }
 .linea10 {
   position: absolute;
-  top: 230px;
+  top: 245px;
 }
 .linea11 {
   position: absolute;
-  top: 255px;
+  top: 270px;
 }
 .linea12 {
   position: absolute;
-  top: 280px;
+  top: 295px;
 }
 .linea13 {
   position: absolute;
-  top: 305px;
+  top: 320px;
 }
 .linea14 {
   position: absolute;
-  top: 330px;
+  top: 345px;
 }
 .linea15 {
   position: absolute;
-  top: 355px;
+  top: 370px;
 }
 .linea16 {
   position: absolute;
-  top: 380px;
+  top: 395px;
 }
 .linea17 {
   position: absolute;
-  top: 405px;
+  top: 420px;
 }
 .linea18 {
   position: absolute;
-  top: 430px;
+  top: 445px;
 }
 .linea19 {
   position: absolute;
-  top: 455px;
+  top: 470px;
 }
 .linea20 {
   position: absolute;
-  top: 480px;
+  top: 495px;
 }
 .linea21 {
   position: absolute;
-  top: 505px;
+  top: 520px;
 }
 .linea22 {
   position: absolute;
-  top: 530px;
+  top: 545px;
 }
 .linea23 {
   position: absolute;
-  top: 555px;
+  top: 570px;
 }
 .linea24 {
   position: absolute;
-  top: 580px;
+  top: 595px;
 }
 .columna01 {
   position: absolute;
@@ -450,4 +451,12 @@ body {
 }
 .etiquetaAS400-azul {
   color: #8a2be2;
+}
+.regla {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Courier New", sans-serif;
+  font-size: 1.85rem;
+  color: yellow;
 }
