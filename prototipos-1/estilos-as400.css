@@ -444,13 +444,20 @@ body {
   color: green;
 }
 .blanco {
-  color: green;
+  color: white;
 }
 .naranja {
   color: orange;
 }
 .azul {
   color: #8a2be2;
+}
+.rojo {
+  color: red;
+}
+.tecla-funcion {
+  color: black;
+  background: white;
 }
 .regla {
   position: absolute;
