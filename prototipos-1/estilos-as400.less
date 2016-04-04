@@ -1,10 +1,15 @@
 
-@color-fondo-ventana : #e6e9e9;
-@color-pantalla-as400 : black;
-@color-borde-ventana-as400 : green;
 
-@color-campoAS400 : green;
-@color-etiquetaAS400 : green;
+@color-AS400-verde : green;
+@color-AS400-blanco : green;
+@color-AS400-azul : #8a2be2;
+@color-AS400-negro: black;
+@color-AS400-naranja: orange;
+
+
+@color-fondo-ventana : #e6e9e9;
+@color-pantalla-as400 : @color-AS400-negro;
+@color-borde-ventana-as400 : @color-AS400-verde;
 
 
 @distancia_entre_lineas : 25px;
@@ -133,7 +138,7 @@ width : 900px;
 height : 630px;
 margin : 5px auto;
 background-color : @color-pantalla-as400;
-color : @color-campoAS400;
+color : @color-AS400-verde;
 border : 1px solid @color-borde-ventana-as400;
 position : absolute;
 top : 100px;
@@ -250,12 +255,12 @@ font-size: 16px;
 .columna80 { position : absolute; left : @columna80; }
 
 
-.campoAS400        { color : @color-campoAS400; }
-.etiquetaAS400{ color : @color-etiquetaAS400; }
+.campoAS400        { color : @color-AS400-verde; }
+.etiquetaAS400{ color : @color-AS400-verde; }
 
-.blanco { color : @color-campoAS400-blanco; }
-.naranja { color : @color-campoAS400-naranja; }
-.azul{ color : @color-etiquetaAS400-azul; }
+.blanco { color : @color-AS400-blanco; }
+.naranja { color : @color-AS400-naranja; }
+.azul{ color : @color-AS400-azul; }
 
 .regla{
     position : absolute;
