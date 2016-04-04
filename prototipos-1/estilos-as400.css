@@ -440,16 +440,16 @@ body {
 .campoAS400 {
   color: green;
 }
-.campoAS400-blanco {
-  color: white;
-}
-.campoAS400-naranja {
-  color: orange;
-}
 .etiquetaAS400 {
   color: green;
 }
-.etiquetaAS400-azul {
+.blanco {
+  color: white;
+}
+.naranja {
+  color: orange;
+}
+.azul {
   color: #8a2be2;
 }
 .regla {
