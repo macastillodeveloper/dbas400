@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang ="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Consulta Decesos Parte 1">
+        <meta name="author" content="Meridiano, S.A.">
+        <meta name="keywords" content="meridiano, as400, consulta, decesos">
+        <title>Consulta Pólizas Decesos</title>
+        <!--======================================-->
+        <!-- Referencias a los estilos            -->
+        <!--======================================-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="estilos-as400.css">
+
+    </head>
+
+    <body>
+
+   <div ng-app="myApp" ng-controller="myCtrl">
+
+   <p>Today's welcome message is:</p>
+    <h1>{{myWelcome}}</h1>
+
+
+    <header><h3>Consulta Póliza Decesos</h3></header>
+
+    <nav></nav>
+
+
+
+         <div class="principal">
+             <!-- <div id="regla" class="regla">123456789+123456789+123456789+123456789+123456789+123456789+123456789+123456789+</div>-->
+<section>
+ <container>
+  <div id= "DNOMCI" class="linea01 columna03 campoAS400 blanco naranja">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0154" class="linea01 columna54 etiquetaAS400 azul">Canal:</div>
+  <div id= "DCODCA" class="linea01 columna61 campoAS400 blanco">OO</div>
+  <div id= "DNOMCA" class="linea01 columna64 campoAS400 blanco">OOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0202" class="linea02 columna02 etiquetaAS400 azul">Zona:</div>
+  <div id= "DCODZG" class="linea02 columna08 campoAS400 blanco">OO</div>
+  <div id= "DNOMZG" class="linea02 columna11 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0233" class="linea02 columna37 etiquetaAS400 azul">Sucursal/A.A.</div>
+  <div id= "DCODSU" class="linea02 columna49 campoAS400 blanco">OOO</div>
+  <div id= "DNOMSU" class="linea02 columna54 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0302" class="linea03 columna02 etiquetaAS400 azul">Oficina:</div>
+  <div id= "DCODAG" class="linea03 columna11 campoAS400 blanco">OOO</div>
+  <div id= "DNOMAG" class="linea03 columna15 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0346" class="linea03 columna46 etiquetaAS400 azul">Póliza:</div>
+  <div id= "DCODPZ" class="linea03 columna54 campoAS400 blanco">OOOOOO</div>
+  <div id= "LABEL0362" class="linea03 columna62 etiquetaAS400 azul">Distrito Cobro:</div>
+  <div id= "DCODZO" class="linea03 columna78 campoAS400 blanco">OOO</div>
+  <div id= "LABEL0402" class="linea04 columna02 etiquetaAS400 azul">Tomador..:</div>
+  <div id= "NOMBRET" class="linea04 columna13 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0459" class="linea04 columna59 etiquetaAS400 azul">NIF:</div>
+  <div id= "NIFC0X" class="linea04 columna64 campoAS400 blanco">OOOOOOOOO</div>
+  <div id= "LABEL0475" class="linea04 columna75 etiquetaAS400 azul">Doc:</div>
+  <div id= "TIPDOC" class="linea04 columna80 campoAS400 blanco">O</div>
+  <div id= "LABEL0502" class="linea05 columna02 etiquetaAS400 azul">Domicilio:</div>
+  <div id= "DDOTPZ" class="linea05 columna13 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0559" class="linea05 columna59 etiquetaAS400 azul">Vto.:</div>
+  <div id= "TIPOV" class="linea05 columna65 campoAS400 blanco">O</div>
+  <div id= "LABEL0569" class="linea05 columna69 etiquetaAS400 azul">Mes Emis:</div>
+  <div id= "MEE099" class="linea05 columna79 campoAS400 blanco">OO</div>
+  <div id= "LABEL0602" class="linea06 columna02 etiquetaAS400 azul">C.P:</div>
+  <div id= "DCPTPZ" class="linea06 columna07 campoAS400 blanco">OOOOO</div>
+  <div id= "LABEL0613" class="linea06 columna13 etiquetaAS400 azul">Localidad:</div>
+  <div id= "DLOTPZ" class="linea06 columna24 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL0645" class="linea06 columna45 etiquetaAS400 azul">Telf:</div>
+  <div id= "DTELPZ" class="linea06 columna51 campoAS400 blanco">OOOOOOOOOO</div>
+  <div id= "LABEL0671" class="linea06 columna71 etiquetaAS400 azul">Cliente:</div>
+  <div id= "TIPCLI" class="linea06 columna80 campoAS400 blanco">O</div>
+  <div id= "LABEL0702" class="linea07 columna02 etiquetaAS400 azul">Imp. Recibo:</div>
+  <div id= "DIREPZ" class="linea07 columna15 campoAS400 blanco">OOOOOOO</div>
+  <div id= "LABEL0726" class="linea07 columna26 etiquetaAS400 azul">Primer Recibo:</div>
+  <div id= "DPRRPZ" class="linea07 columna41 campoAS400 blanco">OOOOOO</div>
+  <div id= "LABEL0750" class="linea07 columna50 etiquetaAS400 azul">Fecha/Causa Baja:</div>
+  <div id= "PFBAPZ" class="linea07 columna69 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "DCODCB" class="linea07 columna80 campoAS400 blanco">O</div>
+  <div id= "LABEL0802" class="linea08 columna02 etiquetaAS400 azul">F. Emisión.:</div>
+  <div id= "PFEMPZ" class="linea08 columna15 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL0826" class="linea08 columna26 etiquetaAS400 azul">FP:</div>
+  <div id= "DFPGPZ" class="linea08 columna30 campoAS400 blanco">O</div>
+  <div id= "LABEL0832" class="linea08 columna32 etiquetaAS400 azul">Pól.Comisión:</div>
+  <div id= "DCOMPZ" class="linea08 columna46 campoAS400 blanco">O</div>
+  <div id= "LABEL0849" class="linea08 columna49 etiquetaAS400 azul">Desfase Mes:</div>
+  <div id= "DESMES" class="linea08 columna64 campoAS400 blanco">OOOOOOO</div>
+  <div id= "LABEL1002" class="linea10 columna02 etiquetaAS400 azul">Productor/Fecha Liquidación.:</div>
+  <div id= "DPROPZ" class="linea10 columna32 campoAS400 blanco">OOOO</div>
+  <div id= "NOMPRD" class="linea10 columna37 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "PLQPPZ" class="linea10 columna71 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL1102" class="linea11 columna02 etiquetaAS400 azul">Revisor/F.Liq.:</div>
+  <div id= "DREVPZ" class="linea11 columna18 campoAS400 blanco">OOOO</div>
+  <div id= "PLQVPZ" class="linea11 columna23 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL1134" class="linea11 columna34 etiquetaAS400 azul">Recuperador/F.Ult.Recuperación:</div>
+  <div id= "DRECPZ" class="linea11 columna66 campoAS400 blanco">OOOO</div>
+  <div id= "PFREPZ" class="linea11 columna71 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL1202" class="linea12 columna02 etiquetaAS400 azul">Causa Alta:</div>
+  <div id= "CAAL0X" class="linea12 columna14 campoAS400 blanco">O</div>
+  <div id= "LABEL1216" class="linea12 columna16 etiquetaAS400 azul">(N=N.Ingreso,P=Pases,D=Desglose,R=Rehabilitacion,C=Competencia)</div>
+  <div id= "LABEL1302" class="linea13 columna02 etiquetaAS400 azul">Tarifa....:</div>
+  <div id= "DFAMPZ" class="linea13 columna14 campoAS400 blanco">O</div>
+  <div id= "LABEL1365" class="linea13 columna65 etiquetaAS400 azul">Pól.S/Reval..:</div>
+  <div id= "DSREPZ" class="linea13 columna80 campoAS400 blanco">O</div>
+  <div id= "LABEL1420" class="linea14 columna20 etiquetaAS400 rojo">PROVIENE DE OFICINA:</div>
+  <div id= "AGEO06" class="linea14 columna41 campoAS400 blanco rojo">OOO</div>
+  <div id= "LABEL1445" class="linea14 columna45 etiquetaAS400 rojo">PÓLIZA:</div>
+  <div id= "POLO06" class="linea14 columna53 campoAS400 rojo">OOOOOO</div>
+  <div id= "LABEL1462" class="linea14 columna62 etiquetaAS400 rojo">(F2 = Consulta)</div>
+  <div id= "LABEL1502" class="linea15 columna02 etiquetaAS400 azul">Servicio/Ultimo cambio:</div>
+  <div id= "DCODSV" class="linea15 columna26 campoAS400 blanco">OOO</div>
+  <div id= "PFULSV" class="linea15 columna30 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL1542" class="linea15 columna42 etiquetaAS400 azul">Traslado Residente:</div>
+  <div id= "TRAR0X" class="linea15 columna62 campoAS400 blanco">O</div>
+  <div id= "LABEL1602" class="linea16 columna02 etiquetaAS400 azul">Alta=C:</div>
+  <div id= "CIAC0X" class="linea16 columna10 campoAS400 blanco">OOOOOOOOOOOOO</div>
+  <div id= "LABEL1624" class="linea16 columna24 etiquetaAS400 azul">Repatriación:</div>
+  <div id= "SIONO" class="linea16 columna38 campoAS400 blanco">OO</div>
+  <div id= "LABEL1643" class="linea16 columna43 etiquetaAS400 azul">Det.Resid:</div>
+  <div id= "PAIS0X" class="linea16 columna54 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL1802" class="linea18 columna02 etiquetaAS400 rojo">Datos de Cobro-></div>
+  <div id= "LABEL1819" class="linea18 columna19 etiquetaAS400 azul">Banco:</div>
+  <div id= "MODA01" class="linea18 columna26 campoAS400 blanco">O</div>
+  <div id= "LABEL1828" class="linea18 columna28 etiquetaAS400 azul">(2=SI, 1=NO)</div>
+  <div id= "LABEL1841" class="linea18 columna41 etiquetaAS400 azul">F.Vigencia:</div>
+  <div id= "FVIGEN" class="linea18 columna53 campoAS400 blanco">OOOOOOOO</div>
+  <div id= "LABEL1902" class="linea19 columna02 etiquetaAS400 azul">Nombre...:</div>
+  <div id= "NOMBREC" class="linea19 columna13 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL2002" class="linea20 columna02 etiquetaAS400 azul">Domicilio:</div>
+  <div id= "DDOCPZ" class="linea20 columna13 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL2059" class="linea20 columna59 etiquetaAS400 azul">CCC</div>
+  <div id= "CCC" class="linea20 columna63 campoAS400 blanco">OOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL2102" class="linea21 columna02 etiquetaAS400 azul">Cta.Cobro:</div>
+  <div id= "DCTCPZ" class="linea21 columna13 campoAS400 blanco">OOOOOOOOOOOOOOO</div>
+  <div id= "LABEL2131" class="linea21 columna31 etiquetaAS400 azul">C. Postal:</div>
+  <div id= "DCPCPZ" class="linea21 columna42 campoAS400 blanco">OOOOO</div>
+  <div id= "LABEL2149" class="linea21 columna49 etiquetaAS400 azul">Localidad:</div>
+  <div id= "DLOCPZ" class="linea21 columna60 campoAS400 blanco">OOOOOOOOOOOOOOOOOOOO</div>
+  <div id= "LABEL2302" class="linea23 columna02 etiquetaAS400 azul tecla-funcion">F1=Sit. año 2009</div>
+  <div id= "LABEL2320" class="linea23 columna20 etiquetaAS400 azul tecla-funcion">F12=Sit. año 2010</div>
+  <div id= "LABEL2341" class="linea23 columna41 etiquetaAS400 azul tecla-funcion">F3=Atras</div>
+  <div id= "LABEL2350" class="linea23 columna50 etiquetaAS400 azul tecla-funcion">F4=Tfas</div>
+  <div id= "LABEL2358" class="linea23 columna58 etiquetaAS400 azul tecla-funcion">F5=Rec.Ptes.</div>
+  <div id= "LABEL2371" class="linea23 columna71 etiquetaAS400 azul tecla-funcion">F6=Stros.</div>
+  <div id= "LABEL2402" class="linea24 columna02 etiquetaAS400 azul tecla-funcion">F7=Servicio</div>
+  <div id= "LABEL2414" class="linea24 columna14 etiquetaAS400 azul tecla-funcion">F8=Mvto.Rec.</div>
+  <div id= "LABEL2427" class="linea24 columna27 etiquetaAS400 azul tecla-funcion">F9=Incid</div>
+  <div id= "LABEL2436" class="linea24 columna36 etiquetaAS400 azul tecla-funcion">F10=Cartas Dev</div>
+  <div id= "LABEL2451" class="linea24 columna51 etiquetaAS400 azul tecla-funcion">F11=Tarj.SIMS</div>
+  <div id= "LABEL2465" class="linea24 columna65 etiquetaAS400 azul tecla-funcion">F24=Datos Banco</div>
+ </container>
+</section>
+         </div>
+
+      <aside></aside>
+        <footer></footer>
+
+
+       <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope, $http) {
+                $http.get("welcome.htm")
+                .then(function(response) {
+                    $scope.myWelcome = response.data;
+                });
+            });
+       </script>
+
+
+
+        <!--======================================-->
+        <!-- Referencias archivos js     -->
+        <!--======================================-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    </body>
+
+</html>

@@ -22,14 +22,56 @@
     <nav></nav>
 
 
+
+
+   <div class="container">
+  <h2>Column Sizing</h2>
+  <p>The form below shows input elements with different widths using different .col-xs-* classes:</p>
+  <form class= "form-inlinex" role="form">
+    <div class="form-group">
+      <div class="col-xs-8">
+        <div class="input-group">
+        <div class="input-group-addon">Empresa:</div>
+         <input class="form-control" id="ex1" type="text" value="OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO">
+        </div>
+
+      </div>
+
+       <div class="col-xs-2">
+        <label for="ex2">col-xs-3</label>
+        <input class="form-control" id="ex2" type="text">
+      </div>
+
+
+      <div class="col-xs-2">
+        <label for="ex3">col-xs-4</label>
+        <input class="form-control" id="ex3" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+   <br>
+
+
     <form class="form-inline">
-    <div class="container-fluid">
+        <div class="container-fluid">
+
+
 
    <div class="form-group">
-    <input type="text" class="form-control" id="DNOMCI" placeholder="DNOMCI" value = "DNOMCIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+    <div class="col-xs-6">
+    <input type="text" class="form-control" id="DNOMCI" placeholder="DNOMCI" value = "DNOMCIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+    </div>
+
     <label for="label">Clave:</label>
-    <input type="text" class="form-control" id="DCODCA" placeholder="DCODCA" value = "DCODCA">
-    <input type="text" class="form-control" id="DNOMCA" placeholder="DNOMCA" value = "DNOMCA">
+    <input type="text" class="form-control" id="DCODCA" placeholder="DCODCA" value = "DCODCA" size="3">
+    <input type="text" class="form-control" id="DNOMCA" placeholder="DNOMCA" value = "DNOMCA" size="20">
    </div>
 
     <div class="form-group">

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>xx</title></head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div >
+
+<p>xxxxxxxxxxxxxxx:</p>
+
+<h1>{{sdf101.DNOTPZ}}</h1>
+
+
+<p>xxxxxxxxxxxxxxxxxxxxxxx</p>
+
+
+</div>
+
+
+
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('myCtrl', function($scope, $http) {
+   $http.get("sdf101.json").success(function(data) {
+            $scope.sdf101 = data;
+       console.log(data);
+  });
+});
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</body>
+</html>
