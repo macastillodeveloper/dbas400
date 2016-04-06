@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
-<head><title>xx</title></head>
+<head><title>xx</title>
 
-<body ng-app="myApp" ng-controller="myCtrl">
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('myCtrl', function($scope, $http) {
+   $http.get("sdf101.json").success(function(data) {
+            $scope.sdf101 = data;
+       console.log(data);
+  });
+});
+</script>
+
+
+
+</head>
+
+<body ng-controller="myCtrl">
+
+
+ <h1>Hola {{nombre}}</h1>
+    <div class="contenedor">
+        <form action="">
+            ¿Cómo te llamas? <input type="text" ng-model="nombre">
+        </form>
+    </div>
+
+
+
 
 <div >
 
@@ -19,17 +45,10 @@
 
 
 
-<script>
-    var app = angular.module('myApp', []);
 
-    app.controller('myCtrl', function($scope, $http) {
-   $http.get("sdf101.json").success(function(data) {
-            $scope.sdf101 = data;
-       console.log(data);
-  });
-});
-</script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
 
 </body>
 </html>

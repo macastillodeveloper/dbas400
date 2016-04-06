@@ -1,11 +1,17 @@
 
-    {
+ [
+     {
+         "dcodag"  001
+     },
+     {
+         "dcodag" : 002
+     },
+     {
+         "dcodag" : 003
+     }
 
-    "DCODAG" : 001,
-    "DCODPZ" : 20000,
-    "DNOTPZ" : "Juan",
-    "DAPTPZ" : "Mateo"
 
-}
+
+]
 
 
