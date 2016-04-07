@@ -1,2 +1,9 @@
 http://angular-formly.com/#/
 http://getbootstrap.com/css/#forms
+http://simple-form-bootstrap.plataformatec.com.br/examples
+http://www.bootply.com/iCouKp774i
+http://formvalidation.io/examples/complex-form/
+http://bootsnipp.com/tags/forms
+
+
+http://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations

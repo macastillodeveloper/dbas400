@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta AS400</title>
+</head>
+
+<body ng-app="as400App" ng-controller="as400AppCtrl">
+
+
+
+  <!--
+   <table>
+    <thead>
+      <tr><th colspan="4">Pólizas</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="poliza in polizas">
+        <td>{{$index + 1}}</td>
+        <td> Oficina:</td>
+        <td>{{poliza.DCODAG}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  -->
+
+  {{polizas.DCODAG}}
+  <br>
+  {{polizas.DCODPZ}}
+  <br>
+  {{polizas.DNOTPZ}}
+  <br>
+  {{polizas.DIREPZ}}
+  <br>
+  {{polizas.DFEMPZ}}
+
+  <!--<script src="bower_components/angular/angular.js"></script>-->
+  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-route.min.js"></script>-->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <!--<script src="js/services.js"></script>-->
+  </body>
+</html>
