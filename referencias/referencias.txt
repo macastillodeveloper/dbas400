@@ -7,3 +7,5 @@ http://bootsnipp.com/tags/forms
 
 
 http://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations
+http://cursoangularjs.es/doku.php?id=unidades:03_servicios:02_http
+https://librosweb.es/libro/bootstrap_3/capitulo_5/estados_de_formulario.html
