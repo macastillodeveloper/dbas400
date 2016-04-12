@@ -23,7 +23,8 @@ angular.module('as400App',[])
             // Campos de trabajo que hay que componer
             $scope.t_canal = '01-AGESMER'; // DCODCA + DNOMCA
             $scope.t_zona = '03-ANDALUC.ORIENTAL SUR'; // DCODZG + DNOMZG
-
+            $scope.t_sucursal = '1-MÁLAGA'; // DCODSU + DNOMSU
+            $scope.t_oficina = $scope.SDF101.DCODAG + '-MÁLAGA'; //DNOMAG
 
 
 
