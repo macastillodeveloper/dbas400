@@ -23,8 +23,13 @@
 
             .tales{
                 height: 500px;
-                background-color: black;
-                color: green;
+                /*background-color: black;
+                color: green;*/
+            }
+
+            .SDP2031 label input{
+
+
             }
 
         </style>
@@ -46,78 +51,513 @@
                     <div class="item active">
                         <!--   <img src="http://placehold.it/1200x400/cccccc/ffffff">-->
                         <div class="container-fluid">
-                            <for class="SDP2031" role="form" >
-                                 <div class="row">
+                            <form class="form-horizontal SDP20301" role="form">
+
+                                <!--
+                                <div class="row">
                                     <div class="col-xs-3">
-                                     <label label for="SDF101.DNOMCI" class="labelAS400">Empresa:</label>
-                                      <input type="text" class="form-control" readonly id="SDF101.DNOMCI" placeholder="SDF101.DNOMCI" value="{{SDF101.DCODPZ}}" />
+                                        <div class="form-group">
+                                            <label label for = "EMPRESA" class="as400">Empresa:</label>
+                                            <input type="text" class="form-control as400" readonly id="EMPRESA" placeholder="EMPRESA" value= "{{ EMPRESA}}" />
+                                        </div>
                                     </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "t_canal" class="as400">Canal:</label>
+                                            <input type="text" class="form-control as400" readonly id="t_canal" placeholder="t_canal" value= "{{ t_canal}}" />
+                                        </div>
+                                    </div>
+
+                                    <div iv class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "t_zona" class="as400">Zona:</label>
+                                            <input type="text" class="form-control as400" readonly id="t_zona" placeholder="t_zona" value= "{{ t_zona}}" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                -->
+
+                          <!--      <div class="row">-->
+                                   <!-- <div class="form-group">-->
+                                       <div class="col-xs-3">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Empresa:</span>
+                                                <input type="text" class="form-control as400"  id="EMPRESA" placeholder="EMPRESA" value= "{{ EMPRESA}}" />
+                                            </div>
+                                        </div>
+                                            <div class="col-xs-3">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Canal:</span>
+                                                <input type="text" class="form-control as400"  id="t_canal" placeholder="t_canal" value= "{{ t_canal}}" />
+                                            </div>
+                                        </div>
+                                         <div class="col-xs-4">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Zona:</span>
+                                                <input type="text" class="form-control as400"  id="t_zona" placeholder="t_zona" value= "{{ t_zona}}" />
+                                            </div>
+                                        </div>
+                                  <!--  </div>-->
+
+
+                                <!--</div>    -->
+
+
+
+
+
+
+
+
+
+                                <!---   POR AQUÍ VOY************************************************************************************** -->
+
+
+
+
+
+<!--
+
+
+                                <div class="row">
 
                                     <div class="col-xs-3">
                                         <div class="form-group">
-                                            <label label for="SDF101.DCODCA" class="labelAS400">Canal: </label>
-                                            <input type="text" class="form-control" READONLY  id="TOMADOR" placeholder="TOMADOR" value="{{SDF101.DNOTPZ}}{{SDF101.DAPTPZ}}" />
+                                            <label label for = "000003" class="as400">Sucursal/A.A.</label>
+                                            <input type="text" class="form-control as400" readonly id="DCODSU" placeholder="DCODSU" value= "{{ SDF101.DCODSU}}" />
+                                            <input type="text" class="form-control as400" readonly id="DNOMSU" placeholder="DNOMSU" value= "{{ SDF101.DNOMSU}}" />
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                       </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000004" class="as400">Oficina:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCODAG" placeholder="DCODAG" value= "{{ SDF101.DCODAG}}" />
+                                            <input type="text" class="form-control as400" readonly id="DNOMAG" placeholder="DNOMAG" value= "{{ SDF101.DNOMAG}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000005" class="as400">Póliza:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCODPZ" placeholder="DCODPZ" value= "{{ SDF101.DCODPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000006" class="as400">Distrito Cobro:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCODZO" placeholder="DCODZO" value= "{{ SDF101.DCODZO}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000007" class="as400">Tomador..:</label>
+                                            <input type="text" class="form-control as400" readonly id="NOMBRET" placeholder="NOMBRET" value= "{{ SDF101.NOMBRET}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000008" class="as400">NIF:</label>
+                                            <input type="text" class="form-control as400" readonly id="NIFC0X" placeholder="NIFC0X" value= "{{ SDF101.NIFC0X}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000009" class="as400">Doc:</label>
+                                            <input type="text" class="form-control as400" readonly id="TIPDOC" placeholder="TIPDOC" value= "{{ SDF101.TIPDOC}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000010" class="as400">Domicilio:</label>
+                                            <input type="text" class="form-control as400" readonly id="DDOTPZ" placeholder="DDOTPZ" value= "{{ SDF101.DDOTPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000011" class="as400">Vto.:</label>
+                                            <input type="text" class="form-control as400" readonly id="TIPOV" placeholder="TIPOV" value= "{{ SDF101.TIPOV}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000012" class="as400">Mes Emis:</label>
+                                            <input type="text" class="form-control as400" readonly id="MEE099" placeholder="MEE099" value= "{{ SDF101.MEE099}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000013" class="as400">C.P:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCPTPZ" placeholder="DCPTPZ" value= "{{ SDF101.DCPTPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000014" class="as400">Localidad:</label>
+                                            <input type="text" class="form-control as400" readonly id="DLOTPZ" placeholder="DLOTPZ" value= "{{ SDF101.DLOTPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000015" class="as400">Telf:</label>
+                                            <input type="text" class="form-control as400" readonly id="DTELPZ" placeholder="DTELPZ" value= "{{ SDF101.DTELPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000016" class="as400">Cliente:</label>
+                                            <input type="text" class="form-control as400" readonly id="TIPCLI" placeholder="TIPCLI" value= "{{ SDF101.TIPCLI}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000017" class="as400">Imp. Recibo:</label>
+                                            <input type="text" class="form-control as400" readonly id="DIREPZ" placeholder="DIREPZ" value= "{{ SDF101.DIREPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000018" class="as400">Primer Recibo:</label>
+                                            <input type="text" class="form-control as400" readonly id="DPRRPZ" placeholder="DPRRPZ" value= "{{ SDF101.DPRRPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000019" class="as400">Fecha/Causa Baja:</label>
+                                            <input type="text" class="form-control as400" readonly id="PFBAPZ" placeholder="PFBAPZ" value= "{{ SDF101.PFBAPZ}}" />
+                                            <input type="text" class="form-control as400" readonly id="DCODCB" placeholder="DCODCB" value= "{{ SDF101.DCODCB}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000020" class="as400">F. Emisión.:</label>
+                                            <input type="text" class="form-control as400" readonly id="PFEMPZ" placeholder="PFEMPZ" value= "{{ SDF101.PFEMPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000021" class="as400">FP:</label>
+                                            <input type="text" class="form-control as400" readonly id="DFPGPZ" placeholder="DFPGPZ" value= "{{ SDF101.DFPGPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000022" class="as400">Pól.Comisión:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCOMPZ" placeholder="DCOMPZ" value= "{{ SDF101.DCOMPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000023" class="as400">Desfase Mes:</label>
+                                            <input type="text" class="form-control as400" readonly id="DESMES" placeholder="DESMES" value= "{{ SDF101.DESMES}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000024" class="as400">Productor/Fecha Liquidación.:</label>
+                                            <input type="text" class="form-control as400" readonly id="DPROPZ" placeholder="DPROPZ" value= "{{ SDF101.DPROPZ}}" />
+                                            <input type="text" class="form-control as400" readonly id="NOMPRD" placeholder="NOMPRD" value= "{{ SDF101.NOMPRD}}" />
+                                            <input type="text" class="form-control as400" readonly id="PLQPPZ" placeholder="PLQPPZ" value= "{{ SDF101.PLQPPZ}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000025" class="as400">Revisor/F.Liq.:</label>
+                                            <input type="text" class="form-control as400" readonly id="DREVPZ" placeholder="DREVPZ" value= "{{ SDF101.DREVPZ}}" />
+                                            <input type="text" class="form-control as400" readonly id="PLQVPZ" placeholder="PLQVPZ" value= "{{ SDF101.PLQVPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000026" class="as400">Recuperador/F.Ult.Recuperación:</label>
+                                            <input type="text" class="form-control as400" readonly id="DRECPZ" placeholder="DRECPZ" value= "{{ SDF101.DRECPZ}}" />
+                                            <input type="text" class="form-control as400" readonly id="PFREPZ" placeholder="PFREPZ" value= "{{ SDF101.PFREPZ}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000027" class="as400">Causa Alta:</label>
+                                            <input type="text" class="form-control as400" readonly id="CAAL0X" placeholder="CAAL0X" value= "{{ SDF101.CAAL0X}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000028" class="as400">(N=N.Ingreso,P=Pases,D=Desglose,R=-</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000029" class="as400">Tarifa....:</label>
+                                            <input type="text" class="form-control as400" readonly id="DFAMPZ" placeholder="DFAMPZ" value= "{{ SDF101.DFAMPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000030" class="as400">Pól.S/Reval..:</label>
+                                            <input type="text" class="form-control as400" readonly id="DSREPZ" placeholder="DSREPZ" value= "{{ SDF101.DSREPZ}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000031" class="as400">PROVIENE DE OFICINA:</label>
+                                            <input type="text" class="form-control as400" readonly id="AGEO06" placeholder="AGEO06" value= "{{ SDF101.AGEO06}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000032" class="as400">PÓLIZA:</label>
+                                            <input type="text" class="form-control as400" readonly id="POLO06" placeholder="POLO06" value= "{{ SDF101.POLO06}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000033" class="as400">(F2 = Consulta)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000034" class="as400">Servicio/Ultimo cambio:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCODSV" placeholder="DCODSV" value= "{{ SDF101.DCODSV}}" />
+                                            <input type="text" class="form-control as400" readonly id="PFULSV" placeholder="PFULSV" value= "{{ SDF101.PFULSV}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000035" class="as400">Traslado Residente:</label>
+                                            <input type="text" class="form-control as400" readonly id="TRAR0X" placeholder="TRAR0X" value= "{{ SDF101.TRAR0X}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000036" class="as400">Alta=C:</label>
+                                            <input type="text" class="form-control as400" readonly id="CIAC0X" placeholder="CIAC0X" value= "{{ SDF101.CIAC0X}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000037" class="as400">Repatriación:</label>
+                                            <input type="text" class="form-control as400" readonly id="SIONO" placeholder="SIONO" value= "{{ SDF101.SIONO}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000038" class="as400">Det.Resid:</label>
+                                            <input type="text" class="form-control as400" readonly id="PAIS0X" placeholder="PAIS0X" value= "{{ SDF101.PAIS0X}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000039" class="as400">Datos de Cobro-></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000040" class="as400">Banco:</label>
+                                            <input type="text" class="form-control as400" readonly id="MODA01" placeholder="MODA01" value= "{{ SDF101.MODA01}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000041" class="as400">(2=SI, 1=NO)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000042" class="as400">F.Vigencia:</label>
+                                            <input type="text" class="form-control as400" readonly id="FVIGEN" placeholder="FVIGEN" value= "{{ SDF101.FVIGEN}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000043" class="as400">Nombre...:</label>
+                                            <input type="text" class="form-control as400" readonly id="NOMBREC" placeholder="NOMBREC" value= "{{ SDF101.NOMBREC}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000044" class="as400">Domicilio:</label>
+                                            <input type="text" class="form-control as400" readonly id="DDOCPZ" placeholder="DDOCPZ" value= "{{ SDF101.DDOCPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000045" class="as400">CCC</label>
+                                            <input type="text" class="form-control as400" readonly id="CCC" placeholder="CCC" value= "{{ SDF101.CCC}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000046" class="as400">Cta.Cobro:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCTCPZ" placeholder="DCTCPZ" value= "{{ SDF101.DCTCPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000047" class="as400">C. Postal:</label>
+                                            <input type="text" class="form-control as400" readonly id="DCPCPZ" placeholder="DCPCPZ" value= "{{ SDF101.DCPCPZ}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000048" class="as400">Localidad:</label>
+                                            <input type="text" class="form-control as400" readonly id="DLOCPZ" placeholder="DLOCPZ" value= "{{ SDF101.DLOCPZ}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000049" class="as400">F1=Sit. año 2009</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000050" class="as400">F12=Sit. año 2010</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000051" class="as400">F3=Atras</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000052" class="as400">F4=Tfas</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000053" class="as400">F5=Rec.Ptes.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000054" class="as400">F6=Stros.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000055" class="as400">F7=Servicio</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000056" class="as400">F8=Mvto.Rec.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000057" class="as400">F9=Incid</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000058" class="as400">F10=Cartas Dev</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000059" class="as400">F11=Tarj.SIMS</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="form-group">
+                                            <label label for = "000060" class="as400">F24=Datos Banco</label>
+                                        </div>
+                                        </form>
+                                </div>
 
 
 
+-->
 
-
-                        <!--<div class="carousel-caption">
+                                <!--<div class="carousel-caption">
 <h3>Headline</h3>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 </div>-->
-                    </div><!-- End Item -->
+                            </form> <!-- End form -->
+                            </div> <!--End Container-Fluid -->
+                                </div><!-- End Item -->
 
                     <div class="item">
-                        <img src="http://placehold.it/1200x400/999999/cccccc">
-                        <div class="carousel-caption">
-                            <h3>Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-                        </div>
-                    </div><!-- End Item -->
+                                <img src="http://placehold.it/1200x400/999999/cccccc">
+                                <div class="carousel-caption">
+                                    <h3>Headline</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+                                </div>
+                            </div><!-- End Item -->
 
                     <div class="item">
-                        <img src="http://placehold.it/1200x400/dddddd/333333">
-                        <div class="carousel-caption">
-                            <h3>Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-                        </div>
-                    </div><!-- End Item -->
+                                <img src="http://placehold.it/1200x400/dddddd/333333">
+                                <div class="carousel-caption">
+                                    <h3>Headline</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+                                </div>
+                            </div><!-- End Item -->
 
                     <div class="item">
-                        <img src="http://placehold.it/1200x400/999999/cccccc">
-                        <div class="carousel-caption">
-                            <h3>Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        </div>
-                    </div><!-- End Item -->
+                                <img src="http://placehold.it/1200x400/999999/cccccc">
+                                <div class="carousel-caption">
+                                    <h3>Headline</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                </div>
+                            </div><!-- End Item -->
 
                 </div><!-- End Carousel Inner -->
 
 
-                <ul class="nav nav-pills nav-justified">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Datos Generales</a></li>
-                    <li data-target="#myCarousel" data-slide-to="1"><a href="#">Garantías</a></li>
-                    <li data-target="#myCarousel" data-slide-to="2"><a href="#">Asegurados</a></li>
-                    <li data-target="#myCarousel" data-slide-to="3"><a href="#">Primas</a></li>
-                </ul>
+                        <ul class="nav nav-pills nav-justified">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Datos Generales</a></li>
+                            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Garantías</a></li>
+                            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Asegurados</a></li>
+                            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Primas</a></li>
+                        </ul>
 
 
-            </div><!-- End Carousel -->
-        </div>
-
-
-
-
-        <!-- ****************** FINAL DEL CÓDIGO ********************************** -->
+                    </div><!-- End Carousel -->
+                </div>
 
 
 
+
+                <!-- ****************** FINAL DEL CÓDIGO ********************************** -->
 
 
 
@@ -129,44 +569,47 @@
 
 
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/controllers.js"></script>
-        <script>
-            $(document).ready( function() {
-                $('#myCarousel').carousel({
-                    interval:   10000
-                });
-
-                var clickEvent = false;
-                $('#myCarousel').on('click', '.nav a', function() {
-                    clickEvent = true;
-                    $('.nav li').removeClass('active');
-                    $(this).parent().addClass('active');
-                }).on('slid.bs.carousel', function(e) {
-                    if(!clickEvent) {
-                        var count = $('.nav').children().length -1;
-                        var current = $('.nav li.active');
-                        current.removeClass('active').next().addClass('active');
-                        var id = parseInt(current.data('slide-to'));
-                        if(count == id) {
-                            $('.nav li').first().addClass('active');
-                        }
-                    }
-                    clickEvent = false;
-                });
-            });
-
-        </script>
 
 
 
+                <!-- Scripts -->
+                <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+                <script src="js/app.js"></script>
+                <script src="js/controllers.js"></script>
+                <script>
+                    $(document).ready( function() {
+                        $('#myCarousel').carousel({
+                            interval:   10000
+                        });
+
+                        var clickEvent = false;
+                        $('#myCarousel').on('click', '.nav a', function() {
+                            clickEvent = true;
+                            $('.nav li').removeClass('active');
+                            $(this).parent().addClass('active');
+                        }).on('slid.bs.carousel', function(e) {
+                            if(!clickEvent) {
+                                var count = $('.nav').children().length -1;
+                                var current = $('.nav li.active');
+                                current.removeClass('active').next().addClass('active');
+                                var id = parseInt(current.data('slide-to'));
+                                if(count == id) {
+                                    $('.nav li').first().addClass('active');
+                                }
+                            }
+                            clickEvent = false;
+                        });
+                    });
+
+                </script>
 
 
 
 
-    </body>
-    </htm>
+
+
+
+                </body>
+            </htm>
