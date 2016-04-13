@@ -1,5 +1,4 @@
 http://angular-formly.com/#/
-http://getbootstrap.com/css/#forms
 http://simple-form-bootstrap.plataformatec.com.br/examples
 http://www.bootply.com/iCouKp774i
 http://formvalidation.io/examples/complex-form/
@@ -7,8 +6,47 @@ http://bootsnipp.com/tags/forms
 
 
 http://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations
-http://cursoangularjs.es/doku.php?id=unidades:03_servicios:02_http
+
 https://librosweb.es/libro/bootstrap_3/capitulo_5/estados_de_formulario.html
 
 http://bootsnipp.com/forms
 http://cursoangularjs.es/doku.php?id=unidades:03_servicios:02_http
+
+
+
+Utilizar estos
+--------------
+
+
+BOOTSTRAP
+
+http://librosweb.es/libro/bootstrap_3/
+http://www.anidocs.es/bootstrap/docs/index.php
+http://getbootstrap.com/components/
+http://www.w3schools.com/bootstrap/
+
+
+
+ANGULAR
+
+http://www.desarrolloweb.com/manuales/manual-angularjs.html
+https://docs.angularjs.org/api
+http://cursoangularjs.es/doku.php?id=unidades:03_servicios:02_http
+
+
+CCS
+
+http://www.w3schools.com/cssref/
+
+
+
+PRUEBAS ONLINE
+
+http://jsfiddle.net/
+http://www.bootply.com/
+
+
+REFERENCIAS
+
+http://blog.getbootstrap.com/2014/02/13/bootstrap-3-1-1-released/
+
