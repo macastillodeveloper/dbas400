@@ -1,0 +1,168 @@
+<div class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-heading">Consulta de Pólizas de Decesos </div>
+        <div class="panel-body">
+            <form class="form-horizontal SDP20301 as-panel-scroll" role="form">
+
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Empresa:     </span>
+                            <input type="text" class="form-control as400" id="cte_empresa" placeholder="cte_empresa" value= "{{cte_empresa}}" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Moneda de contratación</span>
+                            <input type="text" class="form-control as400"  id="MONEDA" placeholder="MONEDA" value= "{{ SDF102.MONEDA}}" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Poliza:</span>
+                            <input type="text" class="form-control as400"  id="DCODPZ" placeholder="DCODPZ" value= "{{ SDF102.DCODPZ}}" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Oficina:</span>
+                            <input type="text" class="form-control as400"  id="t_oficina" placeholder="t_oficina" value= "{{t_oficina}}" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group  input-group-sm">
+                            <span class="input-group-addon as400">Clave comunidad:</span>
+                            <input type="text" class="form-control as400"  id="t_comunidad" placeholder="t_comunidad" value= "{{ SDF102.CODI01}}-{{ SDF102.DESC01}}" />
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                    <table class="table table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Garantía</th>
+                                <th>Suma Asegurada</th>
+                                <th>Primas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Decesos</td>
+                                <td><input type="text" class="form-control as400"  id="DDECGR" placeholder="DDECGR" value= "{{ SDF102.DDECGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Lutos</td>
+                                <td><input type="text" class="form-control as400"  id="DLUTGR" placeholder="DLUTGR" value= "{{ SDF102.DLUTGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Hospialización</td>
+                                <td><input type="text" class="form-control as400"  id="DCOHGR" placeholder="DCOHGR" value= "{{ SDF102.DCOHGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Partos</td>
+                                <td><input type="text" class="form-control as400"  id="DCOPGR" placeholder="DCOPGR" value= "{{ SDF102.DCOPGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Accte. Comp. Muerte</td>
+                                <td><input type="text" class="form-control as400"  id="DACMGR" placeholder="DACMGR" value= "{{ SDF102.DACMGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Accte. Comp. Invalidez</td>
+                                <td>  <input type="text" class="form-control as400"  id="DACIGR" placeholder="DACIGR" value= "{{ SDF102.DACIGR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Código de Traslado</td>
+                                <td><input type="text" class="form-control as400"  id="DCODTR" placeholder="DCODTR" value= "{{ SDF102.DCODTR}}" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Garantía Variable 1</td>
+                                <td><input type="text" class="form-control as400"  id="DVA1GR" placeholder="DVA1GR" value= "{{ SDF102.DVA1GR}}" /></td>
+                                <td><input type="text" class="form-control as400"  id="DPV1GR" placeholder="DPV1GR" value= "{{ SDF102.DPV1GR}}" /></td>
+                            </tr>
+                            <tr>
+                                <td>Garantía Variable 2</td>
+                                <td><input type="text" class="form-control as400"  id="DVA2GR" placeholder="DVA2GR" value= "{{ SDF102.DVA2GR}}" /></td>
+                                <td> <input type="text" class="form-control as400"  id="DPV2GR" placeholder="DPV2GR" value= "{{ SDF102.DPV2GR}}" /></td>
+                            </tr>
+                            <tr>
+                                <td>Garantía Variable 3</td>
+                                <td><input type="text" class="form-control as400"  id="DVA3GR" placeholder="DVA3GR" value= "{{ SDF102.DVA3GR}}" /></td>
+                                <td> <input type="text" class="form-control as400"  id="DPV3GR" placeholder="DPV3GR" value= "{{ SDF102.DPV3GR}}" /></td>
+                            </tr>
+                            <tr>
+                                <td>Responsabilidad Civil</td>
+                                <td><input type="text" class="form-control as400"  id="DVA4GR" placeholder="DVA4GR" value= "{{ SDF102.DVA4GR}}" /></td>
+                                <td> <input type="text" class="form-control as400"  id="DPV4GR" placeholder="DPV4GR" value= "{{ SDF102.DPV4GR}}" /></td>
+                            </tr>
+                            <tr>
+                                <td>Información legal</td>
+                                <td><input type="text" class="form-control as400"  id="DVA5GR" placeholder="DVA5GR" value= "{{ SDF102.DVA5GR}}" /></td>
+                                <td><input type="text" class="form-control as400"  id="DPV5GR" placeholder="DPV5GR" value= "{{ SDF102.DPV5GR}}" /></td>
+                            </tr>
+                            <tr>
+                                <td>S.I.M.S.</td>
+                                <td><input type="text" class="form-control as400"  id="GARAGA" placeholder="GARAGA" value= "{{ SDF102.GARAGA}}" /></td>
+                                <td><input type="text" class="form-control as400"  id="PRIMGA" placeholder="PRIMGA" value= "{{ SDF102.PRIMGA}}" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Traslado Exluido:</span>
+                            <input type="text" class="form-control as400" id="t_excluido" placeholder="t_excluido" value= "{{t_excluido}}" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Póliza RC:</span>
+                            <input type="text" class="form-control as400"  id="POLIRC" placeholder="POLIRC" value= "{{ SDF102.POLIRC}}" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Observaciones:</span>
+                            <input type="text" class="form-control as400"  id="DOBSOB" placeholder="DOBSOB" value= "{{ SDF102.DOBSOB}}" />
+                        </div>
+                    </div>
+                </div>
+
+
+             <br><br>
+            </form>
+
+                    </div>
+    </div>
+</div>
+</div>

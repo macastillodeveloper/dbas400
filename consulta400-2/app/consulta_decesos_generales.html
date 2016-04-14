@@ -1,27 +1,25 @@
-
-   <div class="container-fluid">
+<div class="container-fluid">
     <div class="panel panel-default">
         <div class="panel-heading">Consulta de Pólizas de Decesos</div>
         <div class="panel-body">
-        <!--<div style="width:1080px; height:500px; overflow-y: scroll;" >-->
-            <form class="form-horizontal SDP20301 as-panel-scroll" role="form ">
+            <form class="form-horizontal SDP20301 as-panel-scroll" role="form">
 
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Empresa:     </span>
-                            <input type="text" class="form-control as400"  id="EMPRESA" placeholder="EMPRESA" value= "{{ cte_empresa}}" />
+                            <input type="text" class="form-control as400"  id="cte_empresa" placeholder="cte_empresa" value= "{{ cte_empresa}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Canal:</span>
                             <input type="text" class="form-control as400"  id="t_canal" placeholder="t_canal" value= "{{ t_canal}}" />
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Zona:</span>
                             <input type="text" class="form-control as400"  id="t_zona" placeholder="t_zona" value= "{{ t_zona}}" />
                         </div>
@@ -32,25 +30,25 @@
 
                 <div class="form-group">
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Sucursal/A.A.:</span>
                             <input type="text" class="form-control as400"  id="t_sucursal" placeholder="t_sucursal" value= "{{t_sucursal}}" />
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Oficina:</span>
                             <input type="text" class="form-control as400"  id="t_oficina" placeholder="t_oficina" value= "{{t_oficina}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Póliza:</span>
                             <input type="text" class="form-control as400"  id="DCODPZ" placeholder="DCODPZ" value= "{{SDF101.DCODPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Zona:</span>
                             <input type="text" class="form-control as400"  id="DCODZO" placeholder="DCODZO" value= "{{SDF101.DCODZO}}" />
                         </div>
@@ -61,19 +59,19 @@
 
                 <div class="form-group">
                     <div class="col-xs-6">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Tomador:</span>
                             <input type="text" class="form-control as400"  id="t_tomador" placeholder="t_tomador" value= "{{t_tomador}}" />
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Documento:</span>
                             <input type="text" class="form-control as400"  id="NIFC0X" placeholder="NIFC0X" value= "{{SDF101.NIFC0X}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Tipo:</span>
                             <input type="text" class="form-control as400"  id="TIPDOC" placeholder="TIPDOC" value= "{{SDF101.TIPDOC}}" />
                         </div>
@@ -84,19 +82,19 @@
 
                 <div class="form-group">
                     <div class="col-xs-8">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Domicilio:</span>
                             <input type="text" class="form-control as400"  id="DDOTPZ" placeholder="DDOTPZ" value= "{{ SDF101.DDOTPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Vto.:</span>
                             <input type="text" class="form-control as400" id="TIPOV" placeholder="TIPOV" value= "{{ SDF101.TIPOV}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Mes:</span>
                             <input type="text" class="form-control as400" id="MEE099" placeholder="MEE099" value= "{{ SDF101.MEE099}}" />
                         </div>
@@ -107,25 +105,25 @@
 
                 <div class="form-group">
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">C.P:</span>
                             <input type="text" class="form-control as400" id="DCPTPZ" placeholder="DCPTPZ" value= "{{ SDF101.DCPTPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-6">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Localidad:</span>
                             <input type="text" class="form-control as400" id="DLOTPZ" placeholder="DLOTPZ" value= "{{ SDF101.DLOTPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Telf:</span>
                             <input type="text" class="form-control as400" id="DTELPZ" placeholder="DTELPZ" value= "{{ SDF101.DTELPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Cliente:</span>
                             <input type="text" class="form-control as400" id="TIPCLI" placeholder="TIPCLI" value= "{{ SDF101.TIPCLI}}" />
                         </div>
@@ -136,25 +134,25 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Imp. Recibo:</span>
                             <input type="text" class="form-control as400" id="DIREPZ" placeholder="DIREPZ" value= "{{ SDF101.DIREPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Primer Recibo:</span>
                             <input type="text" class="form-control as400" id="DPRRPZ" placeholder="DPRRPZ" value= "{{ SDF101.DPRRPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Fecha Baja:</span>
                             <input type="text" class="form-control as400"  id="PFBAPZ" placeholder="PFBAPZ" value= "{{ SDF101.PFBAPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Causa Baja:</span>
                             <input type="text" class="form-control as400"  id="DCODCB" placeholder="DCODCB" value= "{{ SDF101.DCODCB}}" />
                         </div>
@@ -165,25 +163,25 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">F. Emisión.:</span>
                             <input type="text" class="form-control as400"  id="PFEMPZ" placeholder="PFEMPZ" value= "{{ SDF101.PFEMPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">FP:</span>
                             <input type="text" class="form-control as400"  id="DFPGPZ" placeholder="DFPGPZ" value= "{{ SDF101.DFPGPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Pól.Comisión:</span>
                             <input type="text" class="form-control as400"  id="DCOMPZ" placeholder="DCOMPZ" value= "{{ SDF101.DCOMPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Desfase Mes:</span>
                             <input type="text" class="form-control as400"  id="DESMES" placeholder="DESMES" value= "{{ SDF101.DESMES}}" />
                         </div>
@@ -192,15 +190,15 @@
 
 
 
-                 <div class="form-group">
+                <div class="form-group">
                     <div class="col-xs-8">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Productor:</span>
                             <input type="text" class="form-control as400"  id="t_productor" placeholder="t_productor" value= "t_productor" />
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Fecha Liquidación.:</span>
                             <input type="text" class="form-control as400"  id="PLQPPZ" placeholder="PLQPPZ" value= "{{ SDF101.PLQPPZ}}" />
                         </div>
@@ -210,26 +208,26 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Revisor:</span>
                             <input type="text" class="form-control as400"  id="DREVPZ" placeholder="DREVPZ" value= "{{ SDF101.DREVPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">F.Liq.:</span>
                             <input type="text" class="form-control as400"  id="PLQVPZ" placeholder="PLQVPZ" value= "{{ SDF101.PLQVPZ}}" />
                         </div>
                     </div>
 
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Recuperador:</span>
                             <input type="text" class="form-control as400"  id="DRECPZ" placeholder="DRECPZ" value= "{{ SDF101.DRECPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">F.Ult.Recuperación:</span>
                             <input type="text" class="form-control as400"  id="PFREPZ" placeholder="PFREPZ" value= "{{ SDF101.PFREPZ}}" />
                         </div>
@@ -240,7 +238,7 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Causa Alta:</span>
                             <input type="text" class="form-control as400"  id="CAAL0X" placeholder="CAAL0X" value= "{{ SDF101.CAAL0X}}" />
                         </div>
@@ -256,25 +254,25 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Tarifa....:</span>
                             <input type="text" class="form-control as400"  id="DFAMPZ" placeholder="DFAMPZ" value= "{{ SDF101.DFAMPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Pól.S/Reval..:</span>
                             <input type="text" class="form-control as400"  id="DSREPZ" placeholder="DSREPZ" value= "{{ SDF101.DSREPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">PROVIENE DE OFICINA:</span>
                             <input type="text" class="form-control as400"  id="AGEO06" placeholder="AGEO06" value= "{{ SDF101.AGEO06}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">PÓLIZA:</span>
                             <input type="text" class="form-control as400"  id="POLO06" placeholder="POLO06" value= "{{ SDF101.POLO06}}" />
                         </div>
@@ -285,19 +283,19 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Servicio:</span>
                             <input type="text" class="form-control as400"  id="DCODSV" placeholder="DCODSV" value= "{{ SDF101.DCODSV}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Ultimo cambio:</span>
                             <input type="text" class="form-control as400"  id="PFULSV" placeholder="PFULSV" value= "{{ SDF101.PFULSV}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Traslado Residente:</span>
                             <input type="text" class="form-control as400"  id="TRAR0X" placeholder="TRAR0X" value= "{{ SDF101.TRAR0X}}" />
                         </div>
@@ -308,19 +306,19 @@
 
                 <div class="form-group">
                     <div class="col-xs-4">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Alta=C:</span>
                             <input type="text" class="form-control as400"  id="CIAC0X" placeholder="CIAC0X" value= "{{ SDF101.CIAC0X}}" />
                         </div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Repatriación:</span>
                             <input type="text" class="form-control as400"  id="SIONO" placeholder="SIONO" value= "{{ SDF101.SIONO}}" />
                         </div>
                     </div>
                     <div class="col-xs-6">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Det.Resid:</span>
                             <input type="text" class="form-control as400"  id="PAIS0X" placeholder="PAIS0X" value= "{{ SDF101.PAIS0X}}" />
                         </div>
@@ -336,7 +334,7 @@
 
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Banco:</span>
                             <input type="text" class="form-control as400"  id="MODA01" placeholder="MODA01" value= "{{ SDF101.MODA01}}" />
                         </div>
@@ -347,7 +345,7 @@
 
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">F.Vigencia:</span>
                             <input type="text" class="form-control as400"  id="FVIGEN" placeholder="FVIGEN" value= "{{ SDF101.FVIGEN}}" />
                         </div>
@@ -358,7 +356,7 @@
 
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Nombre...:</span>
                             <input type="text" class="form-control as400"  id="NOMBREC" placeholder="NOMBREC" value= "{{ SDF101.NOMBREC}}" />
                         </div>
@@ -369,13 +367,13 @@
 
                 <div class="form-group">
                     <div class="col-xs-9">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Domicilio:</span>
                             <input type="text" class="form-control as400"  id="DDOCPZ" placeholder="DDOCPZ" value= "{{ SDF101.DDOCPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">CCC</span>
                             <input type="text" class="form-control as400"  id="CCC" placeholder="CCC" value= "{{ SDF101.CCC}}" />
                         </div>
@@ -386,19 +384,19 @@
 
                 <div class="form-group">
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Cta.Cobro:</span>
                             <input type="text" class="form-control as400"  id="DCTCPZ" placeholder="DCTCPZ" value= "{{ SDF101.DCTCPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">C. Postal:</span>
                             <input type="text" class="form-control as400"  id="DCPCPZ" placeholder="DCPCPZ" value= "{{ SDF101.DCPCPZ}}" />
                         </div>
                     </div>
                     <div class="col-xs-6">
-                        <div class="input-group">
+                        <div class="input-group input-group-sm">
                             <span class="input-group-addon">Localidad:</span>
                             <input type="text" class="form-control as400"  id="DLOCPZ" placeholder="DLOCPZ" value= "{{ SDF101.DLOCPZ}}" />
                         </div>
