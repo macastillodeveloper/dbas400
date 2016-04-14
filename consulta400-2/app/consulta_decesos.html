@@ -12,14 +12,17 @@
 
     <body ng-app="as400App" ng-controller="as400AppCtrl">
 
-
-           <div class="container">
-
            <div ng-include src= "'cabecera_general.html'"></div>
+
+           <div class="container principal">
+
+             <div ng-include src= "'cabecera_general.html'"></div>
 
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+
+
+                   <div class="carousel-inner">
                     <div class="item active">
                         <div ng-include src="'consulta_decesos_generales.html'"></div>
                     </div>
@@ -32,7 +35,10 @@
                     <div class="item">
                         <div ng-include src="'consulta_decesos_primas.html'"></div>
                     </div>
-                </div>
+                   </div>
+
+
+
                 <ul class="nav nav-pills nav-justified">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Datos Generales</a></li>
                     <li data-target="#myCarousel" data-slide-to="1"><a href="#">Garantías</a></li>

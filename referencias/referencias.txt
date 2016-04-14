@@ -24,6 +24,8 @@ http://librosweb.es/libro/bootstrap_3/
 http://www.anidocs.es/bootstrap/docs/index.php
 http://getbootstrap.com/components/
 http://www.w3schools.com/bootstrap/
+https://ajgallego.gitbooks.io/bootstrap-3/content/capitulo_introduccion.html
+http://www.tutosytips.com/las-tablas-y-sus-estilos-en-twitter-bootstrap-3/
 
 
 

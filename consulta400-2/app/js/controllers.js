@@ -30,8 +30,8 @@ angular.module('as400App',[])
             $scope.t_zona = '03 - ANDALUC.ORIENTAL SUR';            // $scope.SDF042.DCODZG + ' - ' + $scope.SDF042.DNOMZG
             $scope.t_sucursal = '1 - MÁLAGA';                       // $scope.SDF006.DCODSU + ' - ' +$scope.SDF006.DNOMSU
             $scope.t_oficina = $scope.SDF101.DCODAG + ' - MÁLAGA';    // $scope.SDF101.DCODAG + ' - ' + $scope.SDF006.DNOMAG
-            $scope.t_tomador = $scope.SDF101.DNOTPZ.trim() + ' ' +$scope.SDF101.DAPTPZ
-            $scope.t_productor = $scope.SDF101.DPROPZ.trim() + ' - LUIS LORENZO SILVA' //$scope.SDF101.DPROPZ.trim() + ' - ' +$scope.SDF007.DNOMPC
+            $scope.t_tomador = $scope.SDF101.DNOTPZ.trim + ' ' +$scope.SDF101.DAPTPZ
+            $scope.t_productor = $scope.SDF101.DPROPZ.trim + ' - LUIS LORENZO SILVA' //$scope.SDF101.DPROPZ.trim() + ' - ' +$scope.SDF007.DNOMPC
 
 
 
