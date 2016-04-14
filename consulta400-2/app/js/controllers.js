@@ -21,9 +21,8 @@ angular.module('as400App',[])
     // Importamos datos de agentes.
 
 
-
-
             // Constantes
+            $scope.cte_ramo = 'DECESOS'
             $scope.cte_empresa = 'MERIDIANO, S.A.'
 
             // Campos de trabajo que hay que componer
