@@ -1,0 +1,33 @@
+<div class="container-fluid">
+<div class="panel panel-default as-scroll">
+<div class="panel-body">
+
+<div class= "row">
+<div class="col-xs-12">
+<h4><div class="span">Asegurados Exentos</div></h4>
+</div>
+</div>
+
+<div class= "row">
+<div class="col-xs-12">
+<table class="table table-bordered table-hover table-sm">
+<thead>
+<tr>
+<th>Orden</th>
+<th>Asegurado</th>
+</tr>
+</thead>
+<tbody>
+<p ng-repeat="asegurado in exentos">
+<tr>
+<td><input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ asegurado.DNUMAS}}"/></td>
+<td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ asegurado.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+</div>

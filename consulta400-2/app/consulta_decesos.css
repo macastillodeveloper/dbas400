@@ -4,13 +4,15 @@
   height: 600px;
   overflow: auto;
 }
-/* Ventanas modales*/
-/*
-.modal-body {
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
+.as-panel-small-scroll {
+  height: 200px;
+  overflow: auto;
 }
-*/
+/* Ventanas modales*/
+.modal-body {
+  max-height: calc(-110vh);
+  overflow-y: auto;
+}
 .principal {
   width: 960px;
   margin: auto;
