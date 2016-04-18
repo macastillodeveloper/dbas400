@@ -1,0 +1,313 @@
+<div class="container-fluid">
+    <div class="panel panel-default as-scroll">
+        <div class="panel-body">
+            <form class="form-horizontal SDP20304" role="form">
+
+
+
+
+                <!-- Bloque 1: Lista de asegurados -->
+                <div class ="panel panel-default">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <table class="table table-bordered table-hover table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Orden</th>
+                                        <th>Nombre Asegurado</th>
+                                        <th>Edad</th>
+                                        <th>Tipo Edad</th>
+                                        <th>Fecha Baja</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <p ng-repeat="asegurado in asegurados">
+                                        <tr>
+                                            <td><input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ asegurado.DNUMAS}}"/></td>
+                                            <td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ asegurado.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DEDAAS" placeholder="DEDAAS" value= "{{ asegurado.DEDAAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DUNEAS" placeholder="DUNEAS" value= "{{ asegurado.DUNEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DFTRAS" placeholder="DFTRAS" value= "{{ asegurado.DFTRAS}}" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ asegurado.DNUMAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ asegurado.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DEDAAS" placeholder="DEDAAS" value= "{{ asegurado.DEDAAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DUNEAS" placeholder="DUNEAS" value= "{{ asegurado.DUNEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DFTRAS" placeholder="DFTRAS" value= "{{ asegurado.DFTRAS}}" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ asegurado.DNUMAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value = "{{ asegurado.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DEDAAS" placeholder="DEDAAS" value= "{{ asegurado.DEDAAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DUNEAS" placeholder="DUNEAS" value= "{{ asegurado.DUNEAS}}" /></td>
+                                            <td><input type="text" class="form-control as400"  id="DFTRAS" placeholder="DFTRAS" value= "{{ asegurado.DFTRAS}}" /></td>
+                                        </tr>
+
+                                    </p>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+               <!--Bloque 2: Datos centrales-->
+               <div class="form-group">
+                    <div class="col-xs-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Orden:</span>
+                            <input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ SDF103.DNUMAS}}" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Nombre:</span>
+                            <input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ SDF103.DNOMAS}}" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Apellidos:</span>
+                            <input type="text" class="form-control as400"  id="DAPEAS" placeholder="DAPEAS" value= "{{ SDF103.DAPEAS}}" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Bloque 3--->
+                <div class="form-group">
+
+                <!--Bloque 3: Izquierda-->
+                    <div class="col-xs-6">
+
+                        <div class="col-xs-12">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">F.Nacimiento:</span>
+                            <input type="text" class="form-control as400"  id="PFNAAS" placeholder="PFNAAS" value= "{{ SDF103.PFNAAS}}" />
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Edad:</span>
+                            <input type="text" class="form-control as400"  id="DEDAAS" placeholder="DEDAAS" value= "{{ SDF101.DEDAAS}}" />
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon as400">Tipo Edad:</span>
+                            <input type="text" class="form-control as400"  id="DUNEAS" placeholder="DUNEAS" value= "{{ DUNEAS.PFNAAS}}" />
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">F. Ingreso:</span>
+                                <input type="text" class="form-control as400"  id="PFINAS" placeholder="PFINAS" value= "{{ SDF101.PFINAS}}" />
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">F. Baja:</span>
+                                <input type="text" class="form-control as400"  id="PBAJAS" placeholder="PBAJAS" value= "{{ SDF101.PBAJAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Causa Baja:</span>
+                                <input type="text" class="form-control as400"  id="DCASAS" placeholder="DCASAS" value= "{{ SDF101.DCASAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Con Partos:</span>
+                                <input type="text" class="form-control as400"  id="DPARAS" placeholder="DPARAS" value= "{{ SDF101.DPARAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Capital Acc.Muer:</span>
+                                <input type="text" class="form-control as400"  id="DAMEAS" placeholder="DAMEAS" value= "{{ SDF101.DAMEAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Capital Acc.Inv:</span>
+                                <input type="text" class="form-control as400"  id="DAIEAS" placeholder="DAIEAS" value= "{{ SDF101.DAIEAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Tarjeta S.:</span>
+                                <input type="text" class="form-control as400"  id="TARJETA" placeholder="TARJETA" value= "{{ SDF101.TARJETA}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Tarifa:</span>
+                                <input type="text" class="form-control as400"  id="TIPOTA" placeholder="TIPOTA" value= "{{ SDF101.TIPOTA}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Fecha Entrada:</span>
+                                <input type="text" class="form-control as400"  id="FETARI" placeholder="FETARI" value= "{{ SDF101.FETARI}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Oficina Pase/Rehab:</span>
+                                <input type="text" class="form-control as400"  id="PAGPAS" placeholder="PAGPAS" value= "{{ SDF101.PAGPAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Póliza Pase/Rehab:</span>
+                                <input type="text" class="form-control as400"  id="PPOPAS" placeholder="PPOPAS" value= "{{ SDF101.PPOPAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Tipo Documento:</span>
+                                <input type="text" class="form-control as400"  id="TDOCAS" placeholder="TDOCAS" value= "{{ SDF101.TDOCAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Nº Documento</span>
+                                <input type="text" class="form-control as400"  id="NIFAS" placeholder="NIFAS" value= "{{ SDF101.NIFAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Capital Decesos:</span>
+                                <input type="text" class="form-control as400"  id="CDECAS" placeholder="CDECAS" value= "{{ SDF101.CDECAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Repatriación:</span>
+                                <input type="text" class="form-control as400"  id="ZONREP" placeholder="ZONREP" value= "{{ SDF101.ZONREP}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Lugar Res:</span>
+                                <input type="text" class="form-control as400"  id="LRESAS" placeholder="LRESAS" value= "{{ SDF101.LRESAS}}" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon as400">Lugar Inh:</span>
+                                <input type="text" class="form-control as400"  id="LINHAS" placeholder="LINHAS" value= "{{ SDF101.LINHAS}}" />
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                <!--Bloque 3: Derecha-->
+
+                    <div class="col-xs-6">
+                        <table class="table table-bordered table-hover table-sm">
+                            <thead>
+                                <tr>
+                                        <th>Garantía</th>
+                                        <th>Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><span>Decesos/Repatr</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFDEAS" placeholder="PFDEAS" value="{{ SDF101.PFDEAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Lutos</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFLUAS" placeholder="PFLUAS" value= "{{ SDF101.PFLUAS}}" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><span>Hospitalización</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFHOAS" placeholder="PFHOAS" value= "{{ SDF101.PFHOAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span></span>Partos</span></td>
+                                    <td> <input type="text" class="form-control as400"  id="PFIPAS" placeholder="PFIPAS" value= "{{ SDF101.PFIPAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>A.C.Muerte</span></td>
+                                    <td> <input type="text" class="form-control as400"  id="PFCMAS" placeholder="PFCMAS" value= "{{ SDF101.PFCMAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>A.M.Inv.</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFCIAS" placeholder="PFCIAS" value= "{{ SDF101.PFCIAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>A.M.Esp.</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFMEAS" placeholder="PFMEAS" value= "{{ SDF101.PFMEAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>A.I.Esp.</span></td>
+                                    <td> <input type="text" class="form-control as400"  id="PFIEAS" placeholder="PFIEAS" value= "{{ SDF101.PFIEAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Traslado</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFTRAS" placeholder="PFTRAS" value= "{{ SDF101.PFTRAS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Variable 1</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFV1AS" placeholder="PFV1AS" value= "{{ SDF101.PFV1AS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Variable 2</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFV2AS" placeholder="PFV2AS" value= "{{ SDF101.PFV2AS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Variable 3</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFV3AS" placeholder="PFV3AS" value= "{{ SDF101.PFV3AS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Resp. Civil</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFV4AS" placeholder="PFV4AS" value= "{{ SDF101.PFV4AS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Inf. Legal</span></td>
+                                    <td><input type="text" class="form-control as400"  id="PFV5AS" placeholder="PFV5AS" value= "{{ SDF101.PFV5AS}}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span>SIMS</span></td>
+                                    <td><input type="text" class="form-control as400"  id="FE01AS" placeholder="FE01AS" value= "{{ SDF101.FE01AS}}" /></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
