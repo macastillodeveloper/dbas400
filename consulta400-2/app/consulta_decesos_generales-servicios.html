@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="panel panel-default as-scroll">
+
+        <div class= "panel-header">
+        <div class="col-xs-12">
+        <h3>Descripción del Servicio</h3>
+        </div>
+        <div class="form-group">
+        <div class="col-xs-12">
+        <div class="input-group input-group-sm">
+        <span class="input-group-addon">Nº de Servicio:</span>
+        <input type="text" class="form-control as400"  id="DCODSV" placeholder="DCODSV" value= "{{ SDF013N.DCOSDSV}}" />
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="panel-body">
+            <div class= "row">
+                <div class="col-xs-12">
+                    <div ng-repeat="servicio in SDF013N">
+                        <div id="DTEXSV" class="span">{{servicio.DTEXSV}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--contenido de ejemplo-->
+                <div class="container">
+
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus velit fugiat, ex similique deleniti cumque rem pariatur reiciendis laborum ipsum. Atque laboriosam quisquam deleniti doloremque, officiis nulla inventore id sapiente.
+
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ea distinctio porro iusto iure necessitatibus sit quisquam aliquam. Nobis sequi, laboriosam ea autem modi quam dolor hic. Nesciunt, perspiciatis, explicabo.
+
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum maxime id laborum blanditiis dolorum! Consequuntur at laborum, architecto quam aperiam, sequi numquam fuga unde libero, ipsam accusantium obcaecati a id.
+                </div>
+
+        </div>
+
+
+
+        <div class="panel-footer">
+            <button type="button" class="btn btn-info">Cerrar</button>
+        </div>
+
+    </div>
+</div>

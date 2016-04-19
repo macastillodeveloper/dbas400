@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div class="panel panel-default as-scroll">
+
+        <div class= "panel-header">
+        <div class="col-xs-12">
+        <h3>Recibos</h3>
+        </div>
+        </div>
+
+
+        <div class="panel-body">
+            <div class="col-xs-12">
+                    <table class="table table-bordered table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Póliza Origen</th>
+                                <th>Mes/Año Cargo</th>
+                                <th>Mes/Año Recibo</th>
+                                <th>Zona</th>
+                                <th>Tipo</th>
+                                <th>Agente</th>
+                                <th>FP</th>
+                                <th>Recibos</th>
+                                <th>Importe</th>
+                                <th>Banco</th>
+                                <th>F. Apunte</th>
+                                <th>Usuario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div ng-repeat="recibo in SDF107">
+                                <tr>
+                                    <td><input type="text" class="form-control as400"  id="AGE06" placeholder="AGE06" value= "{{ PASEF06.AGE06}}{{ PASEF06.POLO06}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DAYMDR" placeholder="DAYMDR" value= "{{DAYMDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DMREDR" placeholder="DMREDR" value= "{{DMREDR}}{{DAREDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DZONDR" placeholder="DZONDR" value= "{{DZONDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DTIPDR" placeholder="DTIPDR" value= "{{DTIPDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DCOBDR" placeholder="DCOBDR" value= "{{DCOBDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DFPGDR" placeholder="DFPGDR" value= "{{DFPGDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DNREDR" placeholder="DNREDR" value= "{{DNREDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DIMPRDR" placeholder="DIMPRDR" value= "{{DNURDR}}*{{DIMPDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DLIBDR" placeholder="DLIBDR" value= "{{DLIBDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DFAPDR" placeholder="DFAPDR" value= "{{DFAPDR}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DUSRDR" placeholder="DUSRDR" value= "{{DUSRDR}}"/></td>
+                                </tr>
+                            </div>
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+
+
+
+        <div class="panel-footer">
+            <button type="button" class="btn btn-info">Cerrar</button>
+        </div>
+
+    </div>
+</div>
