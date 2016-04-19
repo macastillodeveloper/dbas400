@@ -1,33 +1,39 @@
 <div class="container-fluid">
-<div class="panel panel-default as-scroll">
-<div class="panel-body">
+    <div class="panel panel-default as-scroll">
 
-<div class= "row">
-<div class="col-xs-12">
-<h4><div class="span">Asegurados Exentos</div></h4>
-</div>
-</div>
+           <div class= "panel-header">
+            <span><h3>Asegurados Exentos</h3></span>
+           </div>
 
-<div class= "row">
-<div class="col-xs-12">
-<table class="table table-bordered table-hover table-sm">
-<thead>
-<tr>
-<th>Orden</th>
-<th>Asegurado</th>
-</tr>
-</thead>
-<tbody>
-<p ng-repeat="asegurado in exentos">
-<tr>
-<td><input type="text" class="form-control as400"  id="DNUMAS" placeholder="DNUMAS" value= "{{ asegurado.DNUMAS}}"/></td>
-<td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ asegurado.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 
-</div>
-</div>
+
+          <div class="panel-body">
+            <div class= "row">
+                <div class="col-xs-12">
+                    <table class="table table-bordered table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Orden</th>
+                                <th>Asegurado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div ng-repeat="asegurado in SDF123">
+                                <tr>
+                                    <td><input type="text" class="form-control as400"  id="NUAS23" placeholder="NUAS23" value= "{{ asegurado.NUAS23}}"/></td>
+                                    <td><input type="text" class="form-control as400"  id="DNOMAS" placeholder="DNOMAS" value= "{{ SDF103.DNOMAS}}{{ SDF103.DAPEAS}}" /></td>
+                                </tr>
+                            </div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panel-footer">
+        <button type="button" class="btn btn-info">Cerrar</button>
+        </div>
+
+    </div>
 </div>

@@ -15,15 +15,15 @@
 
 
 
-           <div class="container principal">
+        <div class="container principal">
 
-             <div ng-include src= "'cabecera_general.html'"></div>
+            <div ng-include src= "'cabecera_general.html'"></div>
 
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 
-                   <div class="carousel-inner">
+                <div class="carousel-inner">
                     <div class="item active">
                         <div ng-include src="'consulta_decesos_generales.html'"></div>
                     </div>
@@ -36,52 +36,76 @@
                     <div class="item">
                         <div ng-include src="'consulta_decesos_primas.html'"></div>
                     </div>
-                   </div>
 
 
-                <ul class="nav nav-pills nav-justified">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Datos Generales</a></li>
-                    <li data-target="#myCarousel" data-slide-to="1"><a href="#">Garantías</a></li>
-                    <li data-target="#myCarousel" data-slide-to="2"><a href="#">Asegurados</a></li>
-                    <li data-target="#myCarousel" data-slide-to="3"><a href="#">Primas</a></li>
-                </ul>
-            </div>
+
+                    <!--provisionales hasta que se activen los paneles-->
+                    <div class="item">
+                        <div ng-include src="'consulta_decesos_primas_exentos.html'"></div>
+                    </div>
+                     <div class="item">
+                        <div ng-include src="'consulta_decesos_generales-servicio.html'"></div>
+                    </div>
 
 
-        </div>
+
+                        <ul class="nav nav-pills nav-justified">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Datos Generales</a></li>
+                            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Garantías</a></li>
+                            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Asegurados</a></li>
+                            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Primas</a></li>
+                        </ul>
+
+                        <!--provisionales hasta que se activen los paneles-->
+                        <br>
+                        <ul class="nav nav-pills">
+                            <li data-target="#myCarousel" data-slide-to="4"><a href="#">Exentos</a></li>
+                            <li data-target="#myCarousel" data-slide-to="5"><a href="#">Servicio</a></li>
+                        </ul>
 
 
-        <!-- Scripts -->
+                    </div>
 
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/controllers.js"></script>
-        <script>
-            $(document).ready( function() {
-                $('#myCarousel').carousel({
-                    interval:   10000
-                });
 
-                var clickEvent = false;
-                $('#myCarousel').on('click', '.nav a', function() {
-                    clickEvent = true;
-                    $('.nav li').removeClass('active');
-                    $(this).parent().addClass('active');
-                }).on('slid.bs.carousel', function(e) {
-                    if(!clickEvent) {
-                        var count = $('.nav').children().length -1;
-                        var current = $('.nav li.active');
-                        current.removeClass('active').next().addClass('active');
-                        var id = parseInt(current.data('slide-to'));
-                        if(count == id) {
-                            $('.nav li').first().addClass('active');
-                        }
-                    }
-                    clickEvent = false;
-                });
-            });
-        </script>
-    </body>
-    </html>
+                </div>
+
+
+                <!-- Scripts -->
+
+                <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-route.min.js"></script>
+                <script src="js/app.js"></script>
+                <script src="js/controllers.js"></script>
+                <script>
+                    $(document).ready( function() {
+                        $('#myCarousel').carousel({
+                            interval:   10000
+                        });
+
+                        var clickEvent = false;
+                        $('#myCarousel').on('click', '.nav a', function() {
+                            clickEvent = true;
+                            $('.nav li').removeClass('active');
+                            $(this).parent().addClass('active');
+                        }).on('slid.bs.carousel', function(e) {
+                            if(!clickEvent) {
+                                var count = $('.nav').children().length -1;
+                                var current = $('.nav li.active');
+                                current.removeClass('active').next().addClass('active');
+                                var id = parseInt(current.data('slide-to'));
+                                if(count == id) {
+                                    $('.nav li').first().addClass('active');
+                                }
+                            }
+                            clickEvent = false;
+                        });
+                    });
+                </script>
+                </body>
+
+
+
+
+            </html>
